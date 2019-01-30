@@ -8,8 +8,15 @@
 
 import UIKit
 
+
+
 class MasterTableViewController: UITableViewController {
 
+    var modelManager: ModelManager?
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +25,9 @@ class MasterTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        modelManager = ModelManager()
+        
     }
 
     // MARK: - Table view data source

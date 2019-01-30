@@ -18,12 +18,16 @@ struct Color{
 //Create a ModelManager struct that initializes 10 Colors and stores them in the let colors: [Color] property.
 
 
-struct ModelManager{
+public struct ModelManager{
     
-    let colors: [UIColor] = [UIColor.red, UIColor.blue, UIColor.gray, UIColor.purple,
-                             UIColor.yellow, UIColor.black, UIColor.white,
-                             UIColor.orange, UIColor.cyan, UIColor.brown]
+    let colors: [UIColor]
     
     
+    init() {
+        colors = [UIColor.red, UIColor.blue, UIColor.gray, UIColor.purple,
+                                 UIColor.yellow, UIColor.black, UIColor.white,
+                                 UIColor.orange, UIColor.cyan, UIColor.brown]
+        
+    }
     
 }
